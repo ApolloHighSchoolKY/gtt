@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
-<html>
-<body>
+<html> 
+  <body> 
+  
 
 
-Welcome<?php echo $_POST["name"]; ?><br>
-Your Password adress is: <?php echo $_POST["password"]; ?>
-
-</body>
+  <form action="welcome.php" method="post">
+    Name : <input type="text" name="name"><br>
+    Password: <input type="text" name="password"><br>
+    <input type="submit">
+  </form>
+  </body>
 </html>

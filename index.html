@@ -32,7 +32,93 @@
 					<li><a href="login.html">Login</a></li>
 				</ul>
 			</nav>
+		<!--LOGIN CODE PLEASE DONT MOVE OR TOUCH-->
 
+		    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-storage.js"></script>-->
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDDBGLJFW4v4AtMRrDd53yFz7Wm9pX_OdQ",
+        authDomain: "code-cove.firebaseapp.com",
+        databaseURL: "https://code-cove.firebaseio.com",
+        projectId: "code-cove",
+        storageBucket: "code-cove.appspot.com",
+        messagingSenderId: "1089219979545"
+      };
+      firebase.initializeApp(config);
+    </script>
+   
+      <h1>Please enable javascript to use many features of the site</h1>
+    </noscript>
+  </head>
+  <body id="myPage">
+   
+    <!-- Modals -->
+    <div id="modMain" class="modal">
+      <div class="modal-content card-4 animate-top">
+        <header class="container display-container" style="background-color: var(--main-accent-color);">
+          <span onclick="$('#modMain').fadeOut()" class="button display-topright"><i class="fa fa-remove"></i></span>
+          <h4>Welcome to CodeCove!</h4>
+          <h5>A site designed by programming students for class <i class="fa fa-smile-o"></i></h5>
+        </header>
+        <div class="container" style="background-color: var(--main-bg-color);">
+          <p>Check the site out and</p>
+          <p>Leave any feedback you may have in the contact section below!</p>
+        </div>
+        <footer class="container" style="background-color: var(--main-accent-color);">
+          <p>Happy coding!</p>
+        </footer>
+      </div>
+    </div>
+    <div id="modLogin" class="modal">
+      <div class="modal-content card-4 animate-top">
+        <header class="container display-container" style="background-color: var(--main-accent-color);">
+          <span onclick="$('#modLogin').fadeOut()" class="button display-topright"><i class="fa fa-remove"></i></span>
+          <h4>Welcome to GTT!</h4>
+          <h5>Here you can sign in or create a new account.</h5>
+        </header>
+        <div class="container" style="background-color: var(--main-bg-color);">
+            <div id="login_div" class="main-div">
+              <!--Sign in-->
+              <div id="login">
+                <h1>Log In</h1>
+                <input type="email" placeholder="Email Address" id="emailIn" required>
+                <input type="password" placeholder="Password" id="passwordIn" required>
+                <button onclick="login()">Sign In</button>
+              </div>
+              <!--Divider-->
+              <br>
+              <!--Sign up-->
+              <div id="signup">
+                <h1>Create an Account</h1>
+                <input type="email" placeholder="Email Address" id="emailUp" required>
+                <input type="password" placeholder="Password" id="passwordUp" required>
+                <input type="text" placeholder="First Name" id="nameUp" required>
+                <button onclick="signup()">Sign Up</button>
+              </div>
+            </div>
+            <!--Log Out-->
+            <div id="user_div" style="display: none;">
+              <h1 id="user_greetings">Welcome!</h1>
+              <p>Enjoy!</p>
+            </div>
+        </div>
+      </div>
+    </div>
+		
+		
+		
+		
+		
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">

@@ -2,7 +2,7 @@
 function pasuser(form) {
 if (form.id.value=="JavaScript") { 
 if (form.pass.value=="Kit") {              
-location="page2.html" 
+location="index.html" 
 } else {
 alert("Invalid Password")
 }

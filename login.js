@@ -2,7 +2,7 @@
 function pasuser(form) {
 if (form.username.value=="JavaScript") { 
 if (form.password.value=="Kit") {              
-location="index.html" 
+location.href= "index.html"; 
 } else {
 alert("Invalid Password")
 }

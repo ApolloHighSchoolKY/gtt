@@ -33,6 +33,28 @@
 			<div id="heading" >
 				<h1>Login Page</h1>
 			</div>
+		
+	<script language="javascript">
+        <!--//
+            /*This Script allows people to enter by using a form that asks for a
+            UserID and Password*/
+            function pasuser(form) {
+                //Loop through all firebase values
+                if (form.id.value=="JavaScript") {
+                    
+                    //Firebase lookup of a match of the id with the password associated with it
+                    if (form.pass.value=="Kit") {              
+                        location="index.html" 
+                    }
+                    else {
+                        alert("Invalid Password")
+                    }
+                } else {  
+                    alert("Invalid UserID")
+                }
+            }
+        //-->
+        </script>
 <!-- Header -->	
 <section class="wrapper">
 	<div class="inner">
@@ -62,7 +84,7 @@
 		</div>
 	</form>	
 </section>	
-	
+	    
 	
 <!--Create Account-->
 	<section>
@@ -108,7 +130,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="login.js"></script>
 
 	</body>
 </html>
